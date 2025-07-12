@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AlienNet - Internet alienígena ultra-rápida.">
+  <title>AlienNet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" role="tablist" aria-label="Navegação principal">
+    <div class="logo">AlienNet</div>
+    <ul class="nav-links">
+      <li><button role="tab" id="tab-home" aria-controls="home" aria-selected="true" tabindex="0" class="active">Home</button></li>
+      <li><button role="tab" id="tab-sobre" aria-controls="sobre" aria-selected="false" tabindex="-1">Sobre</button></li>
+      <li><button role="tab" id="tab-produtos" aria-controls="produtos" aria-selected="false" tabindex="-1">Produtos</button></li>
+      <li><button role="tab" id="tab-contato" aria-controls="contato" aria-selected="false" tabindex="-1">Contato</button></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="tab-content active" role="tabpanel" tabindex="0" aria-labelledby="tab-home">
+    <header class="hero" style="background-image: url('https://img-cdi.tytotech.com.br/info-bras-telecom/banners/131d8e39-11b2-42e3-8486-503c1e77f4a9.webp'); background-size: cover; background-position: center;">
+      <h1>AlienNet - Internet Alienígena</h1>
+      <p>Para voce que precisa de performance e conectividade</p>
+      <a href="#sobre" onclick="document.getElementById('tab-sobre').click(); return false;">Saiba mais</a>
+    </header>
+  </section>
+
+  
+<section id="sobre" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="tab-sobre" hidden>
+  <div class="container">
+    <h2 class="mt-4">Quem Somos</h2>
+    <p class="lead mt-3">
+      A AlienNet é uma provedora de internet inovadora que nasceu com o objetivo de conectar pessoas e empresas à velocidade de outro mundo.
+    </p>
+    <p>
+      Estamos há anos oferecendo conexão de qualidade, com tecnologia de ponta, atendimento personalizado e compromisso com nossos clientes. Nossa missão é entregar estabilidade e performance, seja na cidade, no campo ou em outros planetas.
+    </p>
+    <p>
+      Oferecemos soluções em internet para residências, empresas e áreas rurais, com planos acessíveis e suporte técnico de verdade. Com a AlienNet, você está sempre conectado.
+    </p>
+  </div>
+</section>
+
+<section id="produtos" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="tab-produtos" hidden>
+  <div class="container">
+    <h2 class="mt-4">Planos AlienNet</h2>
+    <div class="row mt-4 g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Plano Base</h5>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Internet2.jpg" alt="Ícone Plano Base" class="img-fluid mb-3" style="max-height: 60px;">
+
+            <p class="card-text">300 Mega de velocidade ideal para redes sociais e vídeos.</p>
+            <ul>
+              <li>Wi-Fi incluso</li>
+              <li>Sem franquia</li>
+              <li>Suporte remoto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Plano Intergaláctico</h5>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1200px-NGC_4414_%28NASA-med%29.jpg" alt="Ícone Intergaláctico" class="img-fluid mb-3" style="max-height: 60px;">
+
+            <p class="card-text">900 Mega para streaming, jogos online e múltiplos dispositivos.</p>
+            <ul>
+              <li>Atendimento prioritário</li>
+              <li>Roteador incluso</li>
+              <li>Ping otimizado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Plano Empresarial</h5>
+            <img src="https://www.rtek.com.br/wp-content/uploads/2016/12/sistema-empresarial.jpg" alt="Ícone Plano Empresarial" class="img-fluid mb-3" style="max-height: 60px;">
+
+            <p class="card-text">Conexão dedicada para negócios e demandas profissionais.</p>
+            <ul>
+              <li>IP Fixo</li>
+              <li>Monitoramento</li>
+              <li>Suporte técnico 24h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Plano Rural</h5>
+            <img src="https://img-cdi.tytotech.com.br/info-bras-telecom/section_information_images/26075ca6-4afe-43a0-a482-b16372201c6a.webp" alt="Ícone Plano Rural" class="img-fluid mb-3" style="max-height: 60px;">
+
+            <p class="card-text">Cobertura especial para zonas rurais e regiões remotas.</p>
+            <ul>
+              <li>Antena inclusa</li>
+              <li>Instalação rápida</li>
+              <li>Alta estabilidade</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contato" class="tab-content contact" role="tabpanel" tabindex="0" aria-labelledby="tab-contato" hidden>
+    <div class="container">
+      <h2 class="mt-4">Contato</h2>
+      <form novalidate>
+        <input type="text" placeholder="Seu nome" class="form-control" required>
+        <input type="email" placeholder="Seu e-mail" class="form-control" required>
+        <input type="tel" placeholder="Telefone" class="form-control" required>
+        <input type="text" placeholder="Endereço" class="form-control" required>
+        <input type="text" placeholder="Cidade" class="form-control" required>
+        <input type="text" placeholder="Assunto" class="form-control" required>
+        <textarea placeholder="Sua mensagem" class="form-control" required></textarea>
+        <button type="submit" class="btn btn-success mt-3">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AlienNet. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="style.js"></script>
+</body>
+</html>
